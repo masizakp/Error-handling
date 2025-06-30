@@ -1,7 +1,7 @@
 
 # The calculation function performs all the calculations as per
 # the user's choice and return the results
-def calculation(number1, number2, operation):
+def calculateTotal(number1, number2, operation):
     """
     Performs a mathematical calculation based on two numbers and an operation.
 
@@ -46,7 +46,7 @@ while True:
             while True:
                 operations = input("Enter an operation (*,+,-,/): ")
                 if operations in ("*", "+", "-", "/"):
-                    result = calculation(value1,value2,operations)
+                    result = calculateTotal(value1,value2,operations)
                     print(f"{value1} {operations} {value2} = {result}")
                     with open(
                     "equations.txt", "a", encoding='utf-8') as file:
